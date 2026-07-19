@@ -282,3 +282,19 @@ h1, h2, h3, h4 { font-family: "Sora", "Poppins", system-ui, sans-serif; line-hei
   .stats { grid-template-columns: repeat(3, 1fr); }
   .why-card, .price-card, .cta-box { padding: 30px 22px; }
 }
+
+/* ===== Scroll reveal — fade + ease in/out, reversible (enter & exit) ===== */
+.reveal-on .reveal {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity .8s cubic-bezier(.4, 0, .2, 1),
+              transform .8s cubic-bezier(.4, 0, .2, 1);
+  will-change: opacity, transform;
+}
+.reveal-on .reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+}

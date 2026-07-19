@@ -56,3 +56,53 @@ if (book) {
 window.addEventListener('scroll', () => {
   nav.style.boxShadow = window.scrollY > 10 ? '0 4px 20px rgba(15,23,42,.06)' : 'none';
 });
+
+// ===== Scroll reveal: fade + ease in/out, re-triggers on enter AND exit =====
+(function () {
+  const root = document.documentElement;
+  root.classList.add('reveal-on'); // gate: without JS, content stays visible
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const els = [];
+  const reveal = (el, delay) => {
+    el.classList.add('reveal');
+    if (delay) el.style.transitionDelay = delay + 'ms';
+    els.push(el);
+  };
+
+  // standalone blocks
+  document.querySelectorAll(
+    '.section-head, .hero-copy, .hero-book, .why-card, .about-copy, .price-card, .cta-box, .faq-item'
+  ).forEach((el) => reveal(el, 0));
+
+  // grids get a gentle stagger across their cards
+  document.querySelectorAll('.cat-grid, .benefit-grid, .sample-grid, .test-grid')
+    .forEach((grid) => {
+      Array.from(grid.children).forEach((card, i) => reveal(card, (i % 5) * 70));
+    });
+
+  // Primary: IntersectionObserver toggles on enter AND exit
+  let ioFired = false;
+  const io = new IntersectionObserver((entries) => {
+    ioFired = true;
+    entries.forEach((e) => e.target.classList.toggle('in-view', e.isIntersecting));
+  }, { threshold: 0.14, rootMargin: '0px 0px -8% 0px' });
+  els.forEach((el) => io.observe(el));
+
+  // Fallback: if IO never reports (rare/embedded viewers), use scroll math so
+  // content is never stuck hidden — still toggles both ways.
+  setTimeout(() => {
+    if (ioFired) return;
+    io.disconnect();
+    const check = () => {
+      const vh = window.innerHeight || document.documentElement.clientHeight;
+      els.forEach((el) => {
+        const r = el.getBoundingClientRect();
+        el.classList.toggle('in-view', r.top < vh * 0.9 && r.bottom > vh * 0.08);
+      });
+    };
+    check();
+    addEventListener('scroll', check, { passive: true });
+    addEventListener('resize', check, { passive: true });
+  }, 1000);
+})();

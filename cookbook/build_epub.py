@@ -67,6 +67,12 @@ def build():
     book.add_author(BOOK["author"])
     book.add_metadata("DC", "description", BOOK["tagline"])
 
+    # cover image (same design as the PDF) if available
+    cover_img = os.path.join(IMGDIR, "_cover", "cover.jpg")
+    if os.path.exists(cover_img):
+        with open(cover_img, "rb") as cf:
+            book.set_cover("cover.jpg", cf.read())
+
     style = epub.EpubItem(uid="style", file_name="style/main.css",
                           media_type="text/css", content=CSS)
     book.add_item(style)

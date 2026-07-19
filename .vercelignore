@@ -1,0 +1,11 @@
+# Keep these OFF the public Vercel deployment.
+
+# The paid ebooks — must NOT be publicly downloadable (delivered via Gumroad).
+cookbook/
+
+# The Flask store backend (not run on Vercel unless ported to serverless).
+store/
+
+# Docs / dev files
+*.md
+.claude/

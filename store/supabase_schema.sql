@@ -40,3 +40,20 @@ alter table public.orders enable row level security;
 --
 -- create policy "server anon full access" on public.orders
 --   for all to anon using (true) with check (true);
+
+
+-- =====================================================================
+-- Keep-alive table — used by the Vercel cron (api/keepalive.py) to stop
+-- the free-tier project from auto-pausing. Holds only a timestamp, so it
+-- is safe to allow the publishable (anon) key to update it.
+-- =====================================================================
+create table if not exists public.keepalive (
+  id        int primary key default 1,
+  last_ping timestamptz default now()
+);
+insert into public.keepalive (id) values (1) on conflict (id) do nothing;
+
+alter table public.keepalive enable row level security;
+
+create policy "keepalive update (anon)" on public.keepalive
+  for all to anon using (true) with check (true);

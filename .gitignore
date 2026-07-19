@@ -20,3 +20,7 @@ Thumbs.db
 # Ebook binaries — delivered via Gumroad, not tracked in the repo
 cookbook/*.pdf
 cookbook/*.epub
+
+# Local-only: cookbook build assets and Flask store (not deployed via GitHub)
+cookbook/
+store/

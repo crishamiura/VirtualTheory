@@ -16,3 +16,7 @@ cookbook/img/_pdf/
 # os cruft
 Thumbs.db
 .DS_Store
+
+# Ebook binaries — delivered via Gumroad, not tracked in the repo
+cookbook/*.pdf
+cookbook/*.epub

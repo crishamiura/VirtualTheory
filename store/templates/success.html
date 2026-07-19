@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thank you — Vital Theory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/store-static/store.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="/"><span class="logo">VT</span> Vital Theory</a>
+  <nav><a href="/">Home</a></nav>
+</div></header>
+
+<main class="wrap" style="padding:50px 22px;max-width:720px">
+  <div class="card" style="padding:40px;text-align:center">
+    <div style="width:70px;height:70px;border-radius:50%;background:#dcfce7;color:#16a34a;font-size:2.2rem;display:grid;place-items:center;margin:0 auto 18px">✓</div>
+    <span class="eyebrow">Payment successful</span>
+    <h1 style="font-size:2rem;margin:8px 0">Thank you, {{o['name'].split()[0]}}!</h1>
+    <p class="muted">Your order <b>{{o['order_no']}}</b> is confirmed. A copy of your receipt is below.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:28px 0">
+      <a class="btn btn-primary" href="/download/{{o['token']}}/pdf">⬇ Download PDF</a>
+      <a class="btn btn-primary" href="/download/{{o['token']}}/epub">⬇ Download ePub</a>
+    </div>
+    <p class="muted" style="font-size:.86rem">Kindle: send the ePub to your device via Amazon “Send to Kindle”.</p>
+
+    <div style="display:flex;gap:12px;justify-content:center;margin-top:26px">
+      <a class="btn btn-ghost" href="/receipt/{{o['order_no']}}">View receipt</a>
+      <a class="btn btn-ghost" href="/receipt/{{o['order_no']}}.pdf">Download receipt (PDF)</a>
+    </div>
+  </div>
+  <p class="muted" style="text-align:center;margin-top:20px;font-size:.86rem">
+    Keep this page bookmarked — your download links stay active. Receipt on file for {{o['email']}}.
+  </p>
+</main>
+</body>
+</html>

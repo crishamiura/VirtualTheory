@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checkout — Vital Theory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/store-static/store.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="/"><span class="logo">VT</span> Vital Theory</a>
+  <nav><a href="/">← Back to site</a></nav>
+</div></header>
+
+<main class="wrap" style="padding:44px 22px;max-width:920px">
+  <div style="display:grid;grid-template-columns:1.1fr .9fr;gap:34px" class="checkout-grid">
+    <div>
+      <span class="eyebrow">Secure Checkout</span>
+      <h1 style="font-size:2rem;margin:8px 0 4px">Complete your order</h1>
+      <p class="muted" style="margin-bottom:8px">Instant download after payment · 30-day money-back guarantee.</p>
+
+      {% with msgs = get_flashed_messages(with_categories=true) %}
+        {% for cat,m in msgs %}<div class="flash flash-{{cat}}">{{m}}</div>{% endfor %}
+      {% endwith %}
+
+      <form method="POST" action="/api/checkout" class="card" style="padding:26px;margin-top:14px">
+        <label for="name">Full name</label>
+        <input id="name" name="name" required placeholder="Jane Cook">
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" required placeholder="jane@example.com">
+        <p class="muted" style="font-size:.82rem;margin-top:4px">Your receipt and download link go here.</p>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option>United States</option><option>Philippines</option><option>United Kingdom</option>
+          <option>Canada</option><option>Australia</option><option>India</option>
+          <option>Germany</option><option>Other</option>
+        </select>
+        <button class="btn btn-primary" style="margin-top:22px" type="submit">
+          {% if stripe %}Pay {{p.currency}} {{'%.2f'|format(p.price)}} →{% else %}Complete order — {{p.currency}} {{'%.2f'|format(p.price)}} →{% endif %}
+        </button>
+        <p class="muted" style="text-align:center;font-size:.82rem;margin-top:12px">
+          {% if stripe %}🔒 Card details are entered securely on Stripe. We never see them.
+          {% else %}🔒 Demo mode — no real payment is taken. Add Stripe keys to accept live cards.{% endif %}
+        </p>
+      </form>
+    </div>
+
+    <aside>
+      <div class="card" style="padding:24px;position:sticky;top:90px">
+        <span class="eyebrow">Order summary</span>
+        <div style="display:flex;gap:14px;align-items:center;margin:16px 0">
+          <img src="/assets/img/hero.jpg" alt="" style="width:66px;height:66px;object-fit:cover;border-radius:12px">
+          <div>
+            <b>{{p.name}}</b>
+            <div class="muted" style="font-size:.86rem">{{p.desc}}</div>
+          </div>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0"><span class="muted">Item price</span><span style="text-decoration:line-through;color:#94a3b8">{{p.currency}} {{'%.2f'|format(p.list_price)}}</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0"><span class="muted">Launch discount</span><span style="color:#16a34a">−{{p.currency}} {{'%.2f'|format(p.list_price-p.price)}}</span></div>
+        <hr style="border:none;border-top:1px solid var(--border);margin:10px 0">
+        <div style="display:flex;justify-content:space-between;font-weight:700;font-size:1.2rem"><span>Total</span><span class="grad">{{p.currency}} {{'%.2f'|format(p.price)}}</span></div>
+        <ul style="list-style:none;margin-top:18px;display:grid;gap:9px;font-size:.9rem">
+          <li>✓ 200 chef-inspired recipes</li>
+          <li>✓ PDF · ePub · Kindle</li>
+          <li>✓ Instant download + receipt</li>
+          <li>✓ Lifetime updates</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</main>
+<style>@media(max-width:760px){.checkout-grid{grid-template-columns:1fr!important}}</style>
+</body>
+</html>

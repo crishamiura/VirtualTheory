@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard — Vital Theory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/store-static/store.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="/"><span class="logo">VT</span> Vital Theory <span class="muted" style="font-weight:500;font-size:.9rem">· Admin</span></a>
+  <nav>
+    <a href="/admin/orders.csv">Export CSV</a>
+    <a href="/">Storefront</a>
+    <a href="/admin/logout">Sign out</a>
+  </nav>
+</div></header>
+
+<main class="wrap" style="padding:34px 22px 60px">
+  {% with msgs = get_flashed_messages(with_categories=true) %}
+    {% for cat,m in msgs %}<div class="flash flash-{{cat}}">{{m}}</div>{% endfor %}
+  {% endwith %}
+
+  <span class="eyebrow">Overview</span>
+  <h1 style="font-size:1.9rem;margin:6px 0 2px">Revenue &amp; orders</h1>
+  <p class="muted">Live figures from paid orders · data source:
+    <b style="color:var(--blue)">{{ 'Supabase' if backend=='supabase' else 'SQLite' }}</b></p>
+
+  <div class="kpis">
+    <div class="kpi"><b>{{stats.currency}} {{stats.revenue|money}}</b><span>Total revenue</span></div>
+    <div class="kpi"><b>{{stats.orders}}</b><span>Paid orders</span></div>
+    <div class="kpi"><b>{{stats.customers}}</b><span>Customers</span></div>
+    <div class="kpi"><b>{{stats.currency}} {{stats.aov|money}}</b><span>Avg. order value</span></div>
+  </div>
+
+  <div class="card" style="padding:6px 0;margin-top:10px">
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 22px">
+      <h2 style="font-size:1.15rem">Orders — who bought</h2>
+      <span class="muted" style="font-size:.85rem">{{orders|length}} total</span>
+    </div>
+    <div style="overflow-x:auto">
+    <table>
+      <thead><tr>
+        <th>Order</th><th>Customer</th><th>Email</th><th>Country</th>
+        <th>Date</th><th>Amount</th><th>Method</th><th>Status</th><th>Receipt</th><th></th>
+      </tr></thead>
+      <tbody>
+      {% for o in orders %}
+        <tr>
+          <td><b>{{o.order_no}}</b></td>
+          <td>{{o.name}}</td>
+          <td class="muted">{{o.email}}</td>
+          <td>{{o.country}}</td>
+          <td class="muted">{{o.created}}</td>
+          <td><b>{{o.currency}} {{o.amount|money}}</b></td>
+          <td class="muted">{{(o.method or '—')|upper}}</td>
+          <td>
+            {% if o.status=='paid' %}<span class="badge badge-paid">PAID</span>
+            {% elif o.status=='refunded' %}<span class="badge badge-refunded">REFUNDED</span>
+            {% else %}<span class="badge badge-pending">PENDING</span>{% endif %}
+          </td>
+          <td><a href="/receipt/{{o.order_no}}">View</a></td>
+          <td>
+            {% if o.status=='paid' %}
+            <form method="POST" action="/admin/refund/{{o.order_no}}" onsubmit="return confirm('Mark {{o.order_no}} as refunded?')" style="margin:0">
+              <button class="btn btn-ghost" style="padding:6px 12px;font-size:.8rem;width:auto" type="submit">Refund</button>
+            </form>
+            {% endif %}
+          </td>
+        </tr>
+      {% else %}
+        <tr><td colspan="10" style="text-align:center;padding:40px" class="muted">No orders yet. Make a test purchase from the <a href="/checkout">checkout</a>.</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    </div>
+  </div>
+</main>
+</body>
+</html>

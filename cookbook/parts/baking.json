@@ -1,0 +1,375 @@
+[
+  {
+    "category": "Baking & Bread",
+    "title": "Country Sourdough Boule",
+    "chef": "Inspired by Chad Robertson",
+    "prep": "45 min",
+    "cook": "50 min",
+    "serves": "1 large loaf",
+    "level": "Advanced",
+    "intro": "A blistered, mahogany crust gives way to an open, custardy crumb with a gentle tang. This naturally leavened loaf rewards patience with the finest bread you can bake at home.",
+    "ingredients": [
+      "200 g active sourdough starter (bubbly and doubled)",
+      "700 g bread flour",
+      "100 g whole wheat flour",
+      "600 g plus 50 g warm water, divided",
+      "20 g fine sea salt",
+      "Rice flour, for dusting the banneton"
+    ],
+    "steps": [
+      "Whisk the starter into 600 g warm water, then add both flours and mix into a shaggy dough, letting it rest covered for 40 minutes to autolyse.",
+      "Add the salt with the remaining 50 g water and squeeze it through the dough until fully incorporated and smooth.",
+      "Over the next 3 hours, perform a set of stretch-and-folds every 30 minutes, keeping the dough covered and warm between turns.",
+      "Let the dough bulk ferment until it grows about 40 percent in volume and feels airy and jiggly, roughly 2 more hours.",
+      "Turn the dough out, pre-shape into a round, rest 20 minutes, then shape tightly and place seam-up in a rice-floured banneton.",
+      "Cover and cold proof in the refrigerator for 12 to 16 hours to build flavor and structure.",
+      "Preheat a Dutch oven at 500 F for 45 minutes, then invert the loaf in, score deeply, and bake covered for 20 minutes.",
+      "Uncover, lower to 460 F, and bake 25 to 30 minutes until deeply browned, then cool completely on a rack before slicing."
+    ],
+    "tip": "Judge bulk fermentation by dough behavior, not the clock, since a warm kitchen speeds it up dramatically.",
+    "image_query": "sourdough boule"
+  },
+  {
+    "category": "Baking & Bread",
+    "title": "No-Knead Artisan Bread",
+    "chef": "Inspired by Jim Lahey",
+    "prep": "15 min",
+    "cook": "45 min",
+    "serves": "1 loaf",
+    "level": "Easy",
+    "intro": "A crackly, bakery-style loaf that needs no kneading and almost no effort. Time and a hot pot do all the work while you go about your day.",
+    "ingredients": [
+      "400 g bread flour",
+      "8 g fine salt",
+      "1 g instant yeast (about 1/4 teaspoon)",
+      "300 g cool water",
+      "Wheat bran or cornmeal, for dusting"
+    ],
+    "steps": [
+      "Stir the flour, salt, and yeast together, then add the water and mix just until no dry flour remains and a sticky, shaggy dough forms.",
+      "Cover the bowl and let it rise at room temperature for 12 to 18 hours, until the surface is dotted with bubbles.",
+      "Scrape the dough onto a floured surface, fold it over on itself twice, and let it rest 15 minutes seam-side down.",
+      "Shape into a loose ball, set it on a bran-dusted towel, cover, and proof for about 2 hours until nearly doubled.",
+      "Preheat a covered Dutch oven at 475 F for 30 minutes during the final proof.",
+      "Tip the dough seam-side up into the hot pot, cover, and bake for 30 minutes.",
+      "Remove the lid and bake 12 to 18 minutes more until the crust is deep golden brown.",
+      "Cool on a rack for at least an hour so the crumb can set before you slice."
+    ],
+    "tip": "A wetter dough yields a more open crumb, so resist adding extra flour when it feels sticky.",
+    "image_query": "artisan crusty bread"
+  },
+  {
+    "category": "Baking & Bread",
+    "title": "Rosemary Sea Salt Focaccia",
+    "chef": "Inspired by Nancy Silverton",
+    "prep": "25 min",
+    "cook": "25 min",
+    "serves": "12 pieces",
+    "level": "Medium",
+    "intro": "Dimpled, olive-oil drenched, and golden at the edges, this focaccia is pillowy within and crisp beneath. Fresh rosemary and flaky salt make every square irresistible.",
+    "ingredients": [
+      "500 g bread flour",
+      "10 g fine salt",
+      "5 g instant yeast",
+      "400 g lukewarm water",
+      "60 ml extra-virgin olive oil, plus more for the pan",
+      "2 sprigs fresh rosemary, leaves picked",
+      "Flaky sea salt, for finishing"
+    ],
+    "steps": [
+      "Combine the flour, fine salt, and yeast, then mix in the water and 30 ml olive oil until a wet, sticky dough forms.",
+      "Cover and let rise 1 hour, folding the dough over itself four times midway to build strength.",
+      "Generously oil a rimmed sheet pan, transfer the dough, and gently stretch it toward the corners.",
+      "Cover and proof for 1 to 2 hours until puffy and bubbly.",
+      "Drizzle with the remaining oil and press your fingertips all over to create deep dimples.",
+      "Scatter rosemary leaves and flaky salt across the top.",
+      "Bake at 450 F for 22 to 25 minutes until uniformly golden and crisp at the edges.",
+      "Slide onto a rack, brush with a little more oil, and cool slightly before cutting into squares."
+    ],
+    "tip": "Cold-proofing the dimpled dough overnight in the fridge deepens the flavor and makes it easier to handle.",
+    "image_query": "rosemary focaccia"
+  },
+  {
+    "category": "Baking & Bread",
+    "title": "Classic Butter Brioche Loaf",
+    "chef": "Inspired by Paul Hollywood",
+    "prep": "40 min",
+    "cook": "35 min",
+    "serves": "1 loaf",
+    "level": "Advanced",
+    "intro": "Rich with butter and eggs, this brioche bakes into a burnished, feather-light loaf. It tears into tender, golden strands perfect for toast or French toast.",
+    "ingredients": [
+      "500 g strong white bread flour",
+      "7 g fine salt",
+      "50 g caster sugar",
+      "10 g instant yeast",
+      "5 large eggs, plus 1 for glazing",
+      "80 ml warm milk",
+      "250 g unsalted butter, softened"
+    ],
+    "steps": [
+      "Mix the flour, salt, sugar, and yeast in a stand mixer, keeping the salt and yeast on opposite sides.",
+      "Add 5 eggs and the milk, then knead on medium with the dough hook for 8 minutes until smooth and elastic.",
+      "Add the softened butter a few pieces at a time, kneading until fully absorbed and the dough is glossy, about 6 minutes.",
+      "Cover and let rise 1 hour, then refrigerate for at least 4 hours or overnight to firm up.",
+      "Divide the chilled dough into 8 balls, arrange in a buttered loaf tin, and proof 2 hours until risen above the rim.",
+      "Brush gently with beaten egg for a glossy finish.",
+      "Bake at 375 F for 30 to 35 minutes until deep golden and hollow-sounding when tapped.",
+      "Cool in the tin for 10 minutes, then turn out onto a rack to finish cooling."
+    ],
+    "tip": "Chilling the dough is essential, since cold butter keeps the enriched dough workable and prevents a greasy crumb.",
+    "image_query": "brioche loaf"
+  },
+  {
+    "category": "Baking & Bread",
+    "title": "Chewy New York Bagels",
+    "chef": "Inspired by Peter Reinhart",
+    "prep": "35 min",
+    "cook": "22 min",
+    "serves": "8 bagels",
+    "level": "Medium",
+    "intro": "Boiled then baked, these bagels have a glossy, chewy crust and a dense, satisfying interior. An overnight cold proof gives them their signature deep flavor.",
+    "ingredients": [
+      "600 g high-gluten or bread flour",
+      "12 g fine salt",
+      "5 g instant yeast",
+      "20 g barley malt syrup, plus 1 tablespoon for the boil",
+      "340 g cold water",
+      "1 tablespoon baking soda, for the boil",
+      "Sesame or poppy seeds, for topping"
+    ],
+    "steps": [
+      "Mix the flour, salt, yeast, malt syrup, and water into a stiff dough, then knead 10 minutes until smooth and firm.",
+      "Divide into 8 pieces, roll each into a ball, and let them rest 20 minutes under a towel.",
+      "Poke a hole through each ball and stretch into rings, then place on an oiled tray, cover, and refrigerate overnight.",
+      "The next day, bring a wide pot of water to a boil with the baking soda and extra malt syrup.",
+      "Boil the bagels 45 seconds per side, then lift out to drain and dip the tops in seeds.",
+      "Arrange on a parchment-lined sheet and bake at 450 F for 18 to 22 minutes until richly browned.",
+      "Rotate the pan halfway through for even color.",
+      "Cool on a rack for 20 minutes before slicing."
+    ],
+    "tip": "A pinch of baking soda in the boiling water raises its alkalinity for a shinier, chewier crust.",
+    "image_query": "sesame bagels"
+  },
+  {
+    "category": "Baking & Bread",
+    "title": "Buttery English Scones",
+    "chef": "Inspired by Mary Berry",
+    "prep": "15 min",
+    "cook": "12 min",
+    "serves": "8 scones",
+    "level": "Easy",
+    "intro": "Tall, tender, and golden-topped, these classic scones split cleanly for jam and clotted cream. They come together in minutes for a proper afternoon tea.",
+    "ingredients": [
+      "350 g self-rising flour",
+      "1 teaspoon baking powder",
+      "85 g cold unsalted butter, cubed",
+      "40 g caster sugar",
+      "175 ml whole milk",
+      "1 teaspoon vanilla extract",
+      "1 egg, beaten, for glazing"
+    ],
+    "steps": [
+      "Rub the cold butter into the flour and baking powder until the mixture resembles fine crumbs, then stir in the sugar.",
+      "Warm the milk with the vanilla slightly, then pour most of it in and mix quickly to a soft, slightly sticky dough.",
+      "Turn out onto a floured surface and pat gently to about 1 inch thick without overworking.",
+      "Stamp out rounds with a floured cutter, pressing straight down without twisting so they rise evenly.",
+      "Place close together on a lined tray and brush the tops with beaten egg.",
+      "Rest 15 minutes, then bake at 425 F for 10 to 12 minutes until well risen and golden.",
+      "Cool briefly on a rack.",
+      "Serve warm, split with jam and clotted cream."
+    ],
+    "tip": "Twisting the cutter seals the edges and stops the scones from rising straight and tall.",
+    "image_query": "english scones"
+  },
+  {
+    "category": "Baking & Bread",
+    "title": "Overnight White Bread Loaf",
+    "chef": "Inspired by Ken Forkish",
+    "prep": "20 min",
+    "cook": "50 min",
+    "serves": "1 loaf",
+    "level": "Medium",
+    "intro": "A straightforward straight-dough loaf with a crackly crust and soft, flavorful crumb. A long, slow rise develops depth without any special equipment.",
+    "ingredients": [
+      "500 g bread flour",
+      "11 g fine sea salt",
+      "2 g instant yeast",
+      "360 g water at 90 F",
+      "Extra flour, for shaping"
+    ],
+    "steps": [
+      "Mix the flour, salt, and yeast, then add the warm water and squeeze until fully combined into a sticky dough.",
+      "Cover and perform two sets of stretch-and-folds within the first hour.",
+      "Let the dough rise at cool room temperature for 8 to 10 hours until roughly tripled.",
+      "Turn out gently, shape into a tight round, and place seam-up in a floured proofing bowl.",
+      "Proof for 1 to 2 hours until the dough springs back slowly when poked.",
+      "Preheat a Dutch oven at 475 F for 45 minutes.",
+      "Invert the loaf into the pot, cover, and bake 30 minutes, then uncover and bake 20 minutes more until deep brown.",
+      "Cool completely on a rack before cutting."
+    ],
+    "tip": "Keep the dough around 78 F during its long rise for the best balance of flavor and rise.",
+    "image_query": "white bread loaf"
+  },
+  {
+    "category": "Baking & Bread",
+    "title": "Bakery-Style Banana Bread",
+    "chef": "Inspired by Claire Saffitz",
+    "prep": "15 min",
+    "cook": "60 min",
+    "serves": "1 loaf",
+    "level": "Easy",
+    "intro": "Moist, deeply banana-forward, and lightly caramelized on top, this loaf is a study in ripe fruit and brown butter. It slices beautifully and only improves the next day.",
+    "ingredients": [
+      "4 very ripe bananas, mashed (about 400 g)",
+      "115 g unsalted butter",
+      "150 g light brown sugar",
+      "2 large eggs",
+      "1 teaspoon vanilla extract",
+      "230 g all-purpose flour",
+      "1 teaspoon baking soda",
+      "1/2 teaspoon fine salt"
+    ],
+    "steps": [
+      "Melt the butter in a saucepan and cook until it turns nutty and amber, then let it cool slightly.",
+      "Whisk the brown butter with the brown sugar, eggs, and vanilla until smooth.",
+      "Stir in the mashed bananas until well combined.",
+      "Fold in the flour, baking soda, and salt just until no dry streaks remain.",
+      "Pour the batter into a buttered and lined loaf tin and smooth the top.",
+      "Bake at 350 F for 55 to 65 minutes until a skewer comes out clean.",
+      "Tent with foil if the top browns too quickly.",
+      "Cool in the tin 15 minutes, then turn out onto a rack to finish."
+    ],
+    "tip": "The blacker the bananas, the sweeter and more intense the flavor, so let them ripen fully.",
+    "image_query": "banana bread"
+  },
+  {
+    "category": "Baking & Bread",
+    "title": "Frozen S'mores Croissant",
+    "chef": "Inspired by Dominique Ansel",
+    "prep": "45 min",
+    "cook": "20 min",
+    "serves": "6 pastries",
+    "level": "Advanced",
+    "intro": "Flaky, laminated croissant dough filled with dark chocolate and torched marshmallow for a playful twist on a campfire classic. It is an ambitious project with a spectacular payoff.",
+    "ingredients": [
+      "500 g all-purpose flour",
+      "10 g fine salt",
+      "55 g sugar",
+      "10 g instant yeast",
+      "250 g cold milk",
+      "280 g cold unsalted butter, for laminating",
+      "150 g dark chocolate, chopped",
+      "200 g marshmallow fluff",
+      "50 g crushed graham crackers"
+    ],
+    "steps": [
+      "Mix the flour, salt, sugar, yeast, and milk into a dough, knead briefly, then chill 1 hour.",
+      "Pound the butter into a flat square, then encase it in the rolled-out dough and seal the edges.",
+      "Roll out and fold in thirds three times, chilling 45 minutes between each fold to keep the butter cold.",
+      "Roll the laminated dough thin, cut into triangles, place chopped chocolate at the base, and roll up into croissants.",
+      "Proof at warm room temperature for 2 hours until visibly puffy and jiggly.",
+      "Bake at 400 F for 16 to 20 minutes until deep golden and crisp, then cool completely.",
+      "Split each croissant, pipe in marshmallow fluff, and torch the top until toasted.",
+      "Dust with crushed graham crackers and serve at once."
+    ],
+    "tip": "Keep everything cold throughout lamination, since warm butter melts into the dough and ruins the flaky layers.",
+    "image_query": "chocolate croissant"
+  },
+  {
+    "category": "Baking & Bread",
+    "title": "Blueberry Streusel Muffins",
+    "chef": "Inspired by Claire Saffitz",
+    "prep": "20 min",
+    "cook": "25 min",
+    "serves": "12 muffins",
+    "level": "Easy",
+    "intro": "Domed and bursting with juicy berries under a crunchy streusel lid, these muffins are bakery-worthy. A quick batter means fresh muffins in under an hour.",
+    "ingredients": [
+      "300 g all-purpose flour",
+      "2 teaspoons baking powder",
+      "1/2 teaspoon baking soda",
+      "1/2 teaspoon fine salt",
+      "150 g granulated sugar",
+      "2 large eggs",
+      "120 ml vegetable oil",
+      "240 g plain yogurt",
+      "250 g fresh blueberries",
+      "60 g cold butter and 80 g flour for streusel"
+    ],
+    "steps": [
+      "Rub the cold butter into the streusel flour with a spoonful of sugar until crumbly, then set aside.",
+      "Whisk the flour, baking powder, baking soda, salt, and sugar in a large bowl.",
+      "In another bowl, whisk the eggs, oil, and yogurt until smooth.",
+      "Fold the wet ingredients into the dry just until combined, then gently stir in the blueberries.",
+      "Divide the batter among 12 lined muffin cups and scatter streusel over each.",
+      "Bake at 400 F for 5 minutes, then reduce to 375 F and bake 18 to 20 minutes more.",
+      "Test with a skewer for a clean center.",
+      "Cool in the pan 10 minutes before transferring to a rack."
+    ],
+    "tip": "Tossing the blueberries in a little flour first keeps them suspended instead of sinking to the bottom.",
+    "image_query": "blueberry muffins"
+  },
+  {
+    "category": "Baking & Bread",
+    "title": "Rustic Whole Wheat Pain de Campagne",
+    "chef": "Inspired by Chad Robertson",
+    "prep": "30 min",
+    "cook": "45 min",
+    "serves": "1 loaf",
+    "level": "Medium",
+    "intro": "An earthy country loaf balancing hearty whole wheat with a light, airy crumb. Its thick crust and nutty flavor make it a versatile everyday bread.",
+    "ingredients": [
+      "150 g active sourdough starter",
+      "350 g bread flour",
+      "150 g whole wheat flour",
+      "375 g warm water",
+      "10 g fine sea salt",
+      "Rice flour, for the banneton"
+    ],
+    "steps": [
+      "Combine the starter, both flours, and 350 g water into a rough dough and rest 30 minutes to hydrate.",
+      "Add the salt and remaining water, mixing thoroughly until incorporated.",
+      "Fold the dough every 45 minutes for the first 3 hours, keeping it covered and warm.",
+      "Continue bulk fermenting until risen by about a third and airy, roughly 2 more hours.",
+      "Shape into a tight round and place seam-up in a floured banneton, then cold proof overnight.",
+      "Preheat a Dutch oven at 480 F for 40 minutes.",
+      "Turn the loaf out, score once, bake covered 22 minutes, then uncover and bake 22 minutes more.",
+      "Cool fully on a rack before slicing to let the crumb set."
+    ],
+    "tip": "Whole wheat drinks up more water, so a slightly wetter dough keeps this loaf from baking up dense.",
+    "image_query": "whole wheat bread"
+  },
+  {
+    "category": "Baking & Bread",
+    "title": "Soft Cinnamon Rolls",
+    "chef": "Inspired by Paul Hollywood",
+    "prep": "30 min",
+    "cook": "25 min",
+    "serves": "12 rolls",
+    "level": "Medium",
+    "intro": "Pillowy enriched dough spiraled with cinnamon sugar and finished with a tangy glaze. These rolls fill the kitchen with an irresistible aroma as they bake.",
+    "ingredients": [
+      "500 g strong white bread flour",
+      "7 g fine salt",
+      "60 g sugar",
+      "10 g instant yeast",
+      "300 ml warm milk",
+      "50 g melted butter, plus 80 g softened for filling",
+      "120 g brown sugar and 2 tablespoons cinnamon for filling",
+      "100 g cream cheese and 100 g icing sugar for glaze"
+    ],
+    "steps": [
+      "Mix the flour, salt, sugar, and yeast, then add the warm milk and melted butter and knead 8 minutes until smooth.",
+      "Cover and let rise 1 hour until doubled.",
+      "Roll the dough into a large rectangle, spread with softened butter, and sprinkle evenly with brown sugar and cinnamon.",
+      "Roll up tightly from the long edge and cut into 12 equal slices.",
+      "Arrange in a buttered baking dish, cover, and proof 45 minutes until puffy and touching.",
+      "Bake at 375 F for 22 to 25 minutes until golden and cooked through.",
+      "Beat the cream cheese with icing sugar and a splash of milk into a smooth glaze.",
+      "Spread the glaze over the warm rolls and serve."
+    ],
+    "tip": "Cut the rolls with unflavored dental floss to get clean slices without squashing the spiral.",
+    "image_query": "cinnamon rolls"
+  }
+]

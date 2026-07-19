@@ -1,0 +1,18 @@
+# secrets & local config
+.env
+**/.env
+!**/.env.example
+
+# python
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# runtime / generated
+store.db
+**/store.db
+cookbook/img/_pdf/
+
+# os cruft
+Thumbs.db
+.DS_Store

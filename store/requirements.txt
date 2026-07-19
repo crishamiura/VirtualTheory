@@ -1,0 +1,5 @@
+flask>=3.0
+python-dotenv>=1.0
+fpdf2>=2.8
+# Optional — only needed to accept real card payments:
+# stripe>=9.0

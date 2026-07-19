@@ -1,0 +1,47 @@
+/* ===== Vital Theory Store — shared styling ===== */
+:root{
+  --blue:#2563eb;--blue-dark:#1d4ed8;--cyan:#06b6d4;--ink:#0f172a;--slate:#475569;
+  --slate-2:#64748b;--bg:#f0f7ff;--card:#fff;--border:#e2e8f0;--ok:#16a34a;--warn:#f59e0b;
+  --grad:linear-gradient(100deg,#2563eb,#0ea5e9 55%,#06b6d4);
+  --shadow:0 12px 34px rgba(15,23,42,.10);--radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Poppins","Segoe UI",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:700;font-size:1.15rem;font-family:"Sora",sans-serif}
+.brand .logo{width:38px;height:38px;border-radius:11px;background:var(--grad);display:grid;place-items:center;color:#fff;font-weight:800;box-shadow:0 6px 16px rgba(37,99,235,.35)}
+.topbar{background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:20}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.topbar nav a{color:var(--slate);font-weight:500;margin-left:22px}
+h1,h2,h3{font-family:"Sora","Poppins",sans-serif;letter-spacing:-.02em;line-height:1.15}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:15px 26px;border-radius:13px;font-weight:600;font-size:1rem;border:none;cursor:pointer;font-family:inherit;transition:transform .16s,box-shadow .16s;text-decoration:none}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 12px 26px rgba(37,99,235,.34);width:100%}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{background:#fff;color:var(--ink);border:1.5px solid var(--border)}
+.btn:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+.muted{color:var(--slate-2)}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-weight:700;font-size:.76rem;color:var(--cyan)}
+label{display:block;font-weight:600;font-size:.92rem;margin:14px 0 6px}
+input,select{width:100%;padding:13px 14px;border:1.5px solid var(--border);border-radius:11px;font-family:inherit;font-size:1rem;background:#fff}
+input:focus,select:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.12)}
+.row{display:flex;gap:14px}.row>*{flex:1}
+.badge{display:inline-block;padding:4px 12px;border-radius:999px;font-size:.76rem;font-weight:700;letter-spacing:.04em}
+.badge-paid{background:#dcfce7;color:#15803d}
+.badge-pending{background:#fef9c3;color:#a16207}
+.badge-refunded{background:#fee2e2;color:#b91c1c}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:13px 14px;border-bottom:1px solid var(--border)}
+th{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--slate-2)}
+tr:hover td{background:#f8fbff}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:22px 0}
+.kpi{background:#fff;border:1px solid var(--border);border-radius:16px;padding:22px}
+.kpi b{display:block;font-size:2rem;font-family:"Sora",sans-serif;color:var(--blue)}
+.kpi span{color:var(--slate-2);font-size:.9rem}
+.flash{padding:12px 16px;border-radius:11px;margin:14px 0;font-weight:500}
+.flash-err{background:#fee2e2;color:#b91c1c}
+.flash-ok{background:#dcfce7;color:#15803d}
+@media(max-width:820px){.kpis{grid-template-columns:repeat(2,1fr)}.row{flex-direction:column}}
+@media print{.topbar,.no-print{display:none!important}body{background:#fff}}
